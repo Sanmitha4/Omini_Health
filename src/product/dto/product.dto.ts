@@ -3,5 +3,5 @@ export class ProductDto {
   name!: string;
   description!: string;
   price!: number;
-  isDiscontinued!: boolean;
+  isDiscounted!: boolean;
 }
