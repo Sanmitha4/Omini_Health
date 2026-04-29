@@ -32,4 +32,3 @@ export const ProductDB:Array<Product>=[
     new Product({id:3,name:'Product 3',description:'Description 3',price:300,isDiscounted:false}),
 ];
 
-
