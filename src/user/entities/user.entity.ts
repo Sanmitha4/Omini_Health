@@ -5,6 +5,8 @@ export interface IUser {
   email: string;
   password: string;
   gender: string;
+  status: 'active' | 'inactive';
+  createdAt: Date;
 }
 
 export class User implements IUser {
@@ -14,6 +16,8 @@ export class User implements IUser {
   email: string;
   password: string;
   gender: string;
+  status: 'active' | 'inactive';
+  createdAt: Date;
 
   constructor(user: IUser) {
     this.id = user.id;
@@ -22,6 +26,8 @@ export class User implements IUser {
     this.email = user.email;
     this.password = user.password;
     this.gender = user.gender;
+    this.status = user.status;
+    this.createdAt = user.createdAt;
   }
 }
 
@@ -33,6 +39,8 @@ export const UserDB: Array<User> = [
     email: 'bob@gmail.com',
     password: 'password',
     gender: 'Male',
+    status: 'active',
+    createdAt: new Date(),
   }),
   new User({
     id: 2,
@@ -41,6 +49,8 @@ export const UserDB: Array<User> = [
     email: 'rita@gmail.com',
     password: 'password',
     gender: 'Female',
+    status: 'active',
+    createdAt: new Date(),
   }),
   new User({
     id: 3,
@@ -49,5 +59,7 @@ export const UserDB: Array<User> = [
     email: 'alex@gmail.com',
     password: 'password',
     gender: 'Male',
+    status: 'active',
+    createdAt: new Date(),
   }),
 ];
