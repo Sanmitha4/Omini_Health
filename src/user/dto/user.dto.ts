@@ -10,6 +10,7 @@ export class UserDto {
   phone!: number;
   email!: string;
   password!: string;
+
   gender!: string;
 
   status!: 'active' | 'inactive';
