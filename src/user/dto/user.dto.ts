@@ -1,8 +1,8 @@
-import { IsEmail, IsNotEmpty, IsString, MaxLength } from "class-validator";
+import { IsNotEmpty, IsString, MaxLength } from 'class-validator';
 
 export class UserDto {
   id!: number;
-  
+
   @IsNotEmpty()
   @IsString()
   @MaxLength(100)
@@ -13,6 +13,6 @@ export class UserDto {
   gender!: string;
 
   status!: 'active' | 'inactive';
-  
+
   createdAt!: Date;
 }
