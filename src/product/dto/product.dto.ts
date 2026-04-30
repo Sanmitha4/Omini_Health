@@ -39,5 +39,5 @@ export class ProductDto {
     description: 'The product is in discounted range',
     example: false,
   })
-  isDiscounted!: boolean;
+  isDiscontinued!: boolean;
 }
