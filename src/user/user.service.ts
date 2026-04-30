@@ -16,7 +16,7 @@ export class UserService {
       email: createUserDto.email,
       password: createUserDto.password,
       gender: createUserDto.gender,
-      status: 'active',
+      status: 'active' as const,
       createdAt: new Date(),
     };
     UserDB.push(newUser);
